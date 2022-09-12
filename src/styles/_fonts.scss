@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+$font-size: 62.5%;
+$font-Poppins: "Poppins", sans-serif,
+  sans-serif;
+
+%fontPoppins {
+  font-family: $font-Poppins;
+  letter-spacing: 0.1px;
+  font-size: $font-size;
+}
+
+%fontPoppinsBold {
+  @extend %fontPoppins;
+  font-weight: 700;
+}
+
+%fontPoppinsSemi {
+  @extend %fontPoppins;
+  font-weight: 500;
+}
+
+
+.font-small {
+  font-size: 1.1rem !important;
+}
+
+.font-regular {
+  font-size: 1.3rem !important;
+}
+
+.font-medium {
+  font-size: 1.8rem !important;
+}
+
+.font-big {
+  font-size: 2.3rem !important;
+}
+
+.font-extra-big {
+  font-size: 3rem !important;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.fw-bold {
+  font-weight: bold;
+}

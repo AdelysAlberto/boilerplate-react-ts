@@ -1,0 +1,145 @@
+@use 'fonts' as *;
+@use 'variables' as v;
+@use 'measure';
+@use 'custom';
+@use 'buttons';
+
+$color-primary: map-get($map: v.$colors, $key: 'primary');
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size;
+  height: 100%;
+}
+
+html,
+body {
+  @extend %fontPoppins;
+  background-color: map-get($map: v.$colors, $key: 'white');
+}
+
+input,
+input::placeholder {
+  font-family: $font-Poppins;
+  color: #3f3f3f;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  color: map-get($map: v.$colors, $key: 'black');
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#__next {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-rows: min-content;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.text-primary {
+  color: map-get($map: v.$colors, $key: 'primary');
+}
+
+.text-secondary {
+  color: map-get($map: v.$colors, $key: 'secondary');
+}
+
+.text-dark-secondary {
+  color: map-get($map: v.$colors, $key: 'darkPrimary');
+}
+
+.bg-primary {
+  background: map-get($map: v.$colors, $key: 'primary');
+}
+
+.bg-secondary {
+  background: map-get($map: v.$colors, $key: 'secondary');
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  text-align: center;
+  color: map-get($map: v.$colors, $key: 'gray');
+}
+
+.error-message {
+  font-size: 1.2rem;
+  color: red;
+}
+
+.extra-info {
+  position: absolute;
+  bottom: -4rem;
+  color: map-get($map: v.$colors, $key: 'gray');
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -0%);
+}
+
+@media only screen and (max-width: 580px) {
+  .title {
+    padding: 0 0.7rem;
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}

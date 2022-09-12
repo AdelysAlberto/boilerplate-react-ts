@@ -1,0 +1,118 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.row {
+  display: inline-flex;
+  flex-direction: row;
+
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.column {
+  display: inline-flex;
+  flex-direction: column;
+
+  &.center {
+    align-items: center;
+  }
+}
+
+.d-block {
+  display: block;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.align-items-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.self-align-center {
+  align-self: center;
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, .75rem);
+  padding-left: var(--bs-gutter-x, .75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+@media (min-width: 580px) {
+  .container {
+    max-width: 560px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+
+@media (min-width: 980px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1380px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1790px;
+  }
+}
